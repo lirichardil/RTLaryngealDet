@@ -1,0 +1,25 @@
+# Model Architecture Flags — SRE-YOLO
+# ──────────────────────────────────────
+
+# Backbone
+backbone: cspdarknet   # cspdarknet | resnet50 | efficientnet
+backbone_pretrained: true
+freeze_backbone: false
+
+# Neck
+neck: panet            # panet | fpn
+
+# Detection head
+head: yolov8           # yolov8 | yolov5
+
+# SR branch
+sr_enabled: true
+sr_layers: [4, 8]      # mirrors train.yaml — feature indices tapped for SR
+sr_decoder: deep       # shallow | deep
+sr_resblocks: 16       # residual blocks in SR decoder
+sr_upscale: 2          # upscaling factor (640 → 1280)
+
+# Multi-task flags
+use_sr_loss: true
+use_det_loss: true
+joint_training: true   # false = pre-train SR then fine-tune det head

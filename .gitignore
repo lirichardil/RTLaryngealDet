@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Weights & checkpoints (large binaries — track explicitly if needed)
+weights/*.pt
+weights/*.pth
+weights/*.onnx
+
+# Data (raw images & processed — usually too large for git)
+data/raw/
+data/processed/
+
+# Results & logs
+results/
+*.log
+runs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

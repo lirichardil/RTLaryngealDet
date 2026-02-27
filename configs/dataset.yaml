@@ -1,0 +1,31 @@
+# Dataset Configuration — SRE-YOLO
+# ──────────────────────────────────
+
+# Root paths
+data_root: data/
+raw_dir: data/raw/
+lr_dir: data/processed/lr/    # 640x640 LR inputs
+hr_dir: data/processed/hr/    # 1280x1280 HR SR targets
+
+# Split files (paths relative to project root)
+splits:
+  split1:
+    train: data/splits/split1/train.txt
+    val:   data/splits/split1/val.txt
+    test:  data/splits/split1/test.txt
+  split2:
+    train: data/splits/split2/train.txt
+    val:   data/splits/split2/val.txt
+    test:  data/splits/split2/test.txt
+  split3:
+    train: data/splits/split3/train.txt
+    val:   data/splits/split3/val.txt
+    test:  data/splits/split3/test.txt
+
+# Class definitions
+nc: 4   # number of classes — update as needed
+names:
+  0: normal
+  1: leukoplakia
+  2: erythroplakia
+  3: carcinoma
