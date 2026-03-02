@@ -20,7 +20,13 @@ sre_yolo/├── configs/│   ├── dataset.yaml      # dataset paths + c
 
 `conda activate sre_yolo`  
 
-###   
+### 
+
+**Conda Environment Found: `sre_yolo`**
+
+-   Defined in: [LaryngealLesionsDet/environment.yml](vscode-webview://1qd99teotqvugosnh7jarnr0f4p7ft2v7den3sjh8o6q3s2bno9b/LaryngealLesionsDet/environment.yml)
+-   Already installed at: `/home/rl1231/miniconda3/envs/sre_yolo`
+-   Currently active: `base` (not `sre_yolo`)
 
 ###   
 
